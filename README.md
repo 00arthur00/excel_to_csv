@@ -2,6 +2,8 @@
 
 这是一个使用 Python 和 Streamlit 库编写的网页应用程序，旨在实现从 Excel 文件转换为 CSV 格式，并提供文件预览和下载功能。
 
+可以在stream app上直接体验: https://excel-to-csv.streamlit.app/
+
 ## 功能
 
 - 上传 Excel 文件并将其转换为 CSV
