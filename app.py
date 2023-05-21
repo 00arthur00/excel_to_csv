@@ -3,7 +3,6 @@ import pandas as pd
 import base64
 from io import BytesIO
 
-
 # 多语言翻译字典
 translations = {
     'en': {
@@ -43,7 +42,6 @@ def download_csv(csv_data, csv_file, language):
     b64 = base64.b64encode(csv_data).decode()
     href = f'<a href="data:file/csv;base64,{b64}" download="{csv_file}">{translate("download_link", language)}</a>'
     return href
-
 
 
 def main():
