@@ -1,3 +1,5 @@
+[English Documentation](./README_EN.md)
+
 # Excel转CSV转换器
 
 这是一个使用 Python 和 Streamlit 库编写的网页应用程序，旨在实现从 Excel 文件转换为 CSV 格式，并提供文件预览和下载功能。
@@ -27,6 +29,10 @@ streamlit run app.py
 
 4. 应用程序将在本地启动一个服务器，并显示一个 URL。
 5. 在浏览器中访问该 URL，即可使用网页应用程序。
+
+## 多语言支持
+
+该应用程序支持中文和英文两种语言。你可以在应用程序的侧边栏中选择所需的语言。
 
 ## 注意事项
 
