@@ -39,10 +39,11 @@ def convert_excel_to_csv(file):
     return csv_data
 
 
-def download_csv(csv_data, csv_file):
+def download_csv(csv_data, csv_file, language):
     b64 = base64.b64encode(csv_data).decode()
     href = f'<a href="data:file/csv;base64,{b64}" download="{csv_file}">{translate("download_link", language)}</a>'
     return href
+
 
 
 def main():
@@ -60,7 +61,7 @@ def main():
             csv_data = convert_excel_to_csv(uploaded_file)
             csv_file = uploaded_file.name.replace(".xlsx", ".csv")
             st.success(translate("success_message", language_code))
-            download_link = download_csv(csv_data, csv_file)
+            download_link = download_csv(csv_data, csv_file, language_code)
             st.markdown(download_link, unsafe_allow_html=True)
 
             # 预览转换后的CSV文件
